@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Curriculum Vitae",
   "main": "index.js",
+  "homepage": "https://github.io/RandomosityKid/CVitae",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
@@ -10,7 +11,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/RandomosityKid/CVitae/issues"
-  },
-  "homepage": "https://github.com/RandomosityKid/CVitae#readme"
+  }
+  
 }
