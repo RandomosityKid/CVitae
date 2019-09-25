@@ -2,8 +2,8 @@
   "name": "cvitae",
   "version": "1.0.0",
   "description": "Curriculum Vitae",
-  "main": "index.js",
-  "homepage": "https://github.io/RandomosityKid/CVitae",
+  "main": "gulpfile.js",
+  "homepage": "https://github.io/RandomosityKid/CVitae#readme",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
