@@ -6,21 +6,18 @@
     <title>Brant Dela Cruz</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <!-- main css -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Core CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-     <!-- responsive css -->
-     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-     <!-- template main css file -->
-     <link rel="stylesheet" href="css/style.css">
-     
-     <link rel="stylesheet" href="css/mystyle.scss">
-
     
-    <script src="js/jquery.js" ></script>
-    <script src="js/bootstrap.js" ></script>
-    <!-- template main js -->
-	  <script src="js/main.js"></script>
+    <!-- Core Scripts -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Animated Header Dependencies -->
+    <script src="js/ahmodernizr.js"></script> 
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/mystyle.css">
 </head>
 
 <header>
@@ -30,47 +27,67 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-148464347-2');
   </script>
 </header>
 
 <body>
-
-    
-  <!-- ==================================================
-      Navbar Section Start
-      ================================================== -->
+  <!-- =================================================
+    Navbar Section Start
+  ================================================== -->
   <section class="navigation">
-      <div class="nav-container">
-        <div class="brand">
-          <a href="#!">Brant Dela Cruz</a>
-        </div>
-        <nav>
-          <label for="show-menu" class="show-menu">&#9776;</label>
-          <input type="checkbox" id="show-menu" role="button">
-          <ul id="menu">
-            <li> <a href="#!">Info</a> </li>
-            
-            <li>
-              <a href="#!">Skills</a>
-              <ul class="hidden">
-                <li><a href="#!">Programming</a></li>
-                <li><a href="#!">Game Development</a></li>
-                <li><a href="#!">Videography</a></li>
-                <li><a href="#!">Photography</a></li>
-                <li><a href="#!">Music</a></li>
-              </ul>
-            </li>
-            
-            <li> <a href="#!">Contact</a> </li>
-          </ul>
-        </nav>
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!">Brant Dela Cruz</a>
       </div>
-    </section>
+      <nav>
+        <label for="show-menu" class="show-menu">&#9776;</label>
+        <input type="checkbox" id="show-menu" role="button">
+        <ul id="menu">
+          <li>
+            <a href="#!">Info</a>
+          </li>
+          <li>
+            <a href="#!">Skills</a>
+            <ul class="hidden">
+              <li><a href="#!">Programming</a></li>
+              <li><a href="#!">Game Development</a></li>
+              <li><a href="#!">Videography</a></li>
+              <li><a href="#!">Photography</a></li>
+              <li><a href="#!">Music</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
 
+  <!-- =================================================
+    Animated Slider Section Start
+  ================================================== -->
+  <section class="cd-intro">
+    <h1 class="cd-headline rotate-1">
+      <span>Who am I? I am a</span>
+      <span class="cd-words-wrapper">
+          <b class="is-visible">Programmer</b>
+          <b>Composer</b>
+          <b>Photographer</b>
+          <b>Developer</b>
+          <b>Guitarist</b>
+          <b>Videographer</b>
+      </span>
+    </h1>
+  </section> <!-- cd-intro -->
        
 
+  <!-- =================================================
+    Scripts Section Start
+  ================================================== -->
+  <!-- Animated Header Scripts -->
+  <script src="js/ahmain.js"></script>   
       
 </body>
 </html>
