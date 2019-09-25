@@ -1,0 +1,25 @@
+{
+  "name": "cvitae",
+  "version": "1.0.0",
+  "description": "Curriculum Vitae",
+  "main": "index.js",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "bootstrap": "^4.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RandomosityKid/CVitae.git"
+  },
+  "author": "Brant Dela Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RandomosityKid/CVitae/issues"
+  },
+  "homepage": "https://github.com/RandomosityKid/CVitae#readme"
+}
