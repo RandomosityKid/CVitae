@@ -4,8 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Brant Dela Cruz</title>
-    <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
-    <meta name='viewport' content='width=1024'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <!-- Core CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -41,40 +40,37 @@
   <!-- =================================================
     Navbar Section Start
   ================================================== -->
-  <section class="navigation">
-    <div class="nav-container">
+  <div class="main-navbar hide" id="main-navbar">
       <div class="brand">
-        <a href="#!">Brant Dela Cruz</a>
+          <a href="#" class="brand" id="brand">Brant Dela Cruz</a>
       </div>
-      <nav>
-        <label for="show-menu" class="show-menu">&#9776;</label>
-        <input type="checkbox" id="show-menu" role="button">
-        <ul id="menu">
-          <li>
-            <a href="#!">Info</a>
-          </li>
-          <li>
-            <a href="#!">Skills</a>
-            <ul class="hidden">
-              <li><a href="#!" class="bbottom">Programming</a></li>
-              <li><a href="#!">Game Development</a></li>
-              <li><a href="#!">Videography</a></li>
-              <li><a href="#!">Photography</a></li>
-              <li><a href="#!">Music</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#!">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
+      <div></div>
+      <div class="mobile " id="mobile">
+          <label for="show-menu" class="show-menu " id="menuAnchor">&#9776;</label>
+          <input type="checkbox" id="show-menu" role="button">
+          <ul class="nav " id="mynav">
+              <li><a href="#">Info</a></li>
+              <li><a href="#" id="hideParent">Skills ▾</a>
+                  <ul id="hidden">
+                      <li><a href="#" class="bottomry">Programming</a></li>
+                      <li><a href="#">Game Development</a></li>
+                      <li><a href="#">Videography</a></li>
+                      <li><a href="#">Photography</a></li>
+                      <li><a href="#">Music</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Space for Navbar formatting on top -->
+  <section class="space border1"> </section>
 
   <!-- =================================================
     Animated Slider Section Start
   ================================================== -->
-  <section class="cd-intro">
+  <section class="cd-intro" id="cd-intro">
     <h1 class="cd-headline rotate-1">
       <span>Who am I? I am a</span>
       <span class="cd-words-wrapper">
@@ -107,14 +103,14 @@
       </div>
 
       <!-- Section Content -->
-      <div class="flexbox-container text-white">
-        <div class="fb-item fb-item-1">
+      <div class="flexbox-container text-white ">
+        <div class="fb-item fb-item-1 ">
           <img id="myImage" src="img/profile.jpg" alt="">
         </div>
-        <div class="fb-item fb-item-2 info-text">
+        <div class="fb-item fb-item-2 info-text ">
             <p class="lead">I am a BSIT student studying about programming here in the Philippines. My future goal is to become a game developer well-versed in the programming side of the physics used in mainstream game engines.</p>
         </div>
-        <div class="fb-item fb-item-3 info-text">
+        <div class="fb-item fb-item-3 info-text ">
             <p class="lead">My wide range of skills help me become an asset in multiple areas and can help assist on multiple departments, as well as an indespensable worker due to my reach in skills. </p>
         </div>
       </div>
@@ -125,8 +121,32 @@
   <!-- =================================================
     Scripts Section Start
   ================================================== -->
-  <!-- Animated Header Scripts -->
-  <script src="js/ahmain.js"></script>   
-      
+    <!-- Animated Header Scripts -->
+    <script src="js/ahmain.js"></script>   
+
+    <script>
+        window.onscroll = function() {
+          scrollFunction()
+      };
+
+      function scrollFunction(){
+        var Navb = document.getElementById("main-navbar")
+        var Logo = document.getElementById("brand")
+        var mobileNav = document.getElementById("menuAnchor")
+        if (document.body.scrollTop > 8 || document.documentElement.scrollTop > 8) {
+          Navb.style.height = "75px";
+          Logo.style.fontSize = "1.3rem";
+          Logo.style.fontWeight = "400";
+          mobileNav.style.marginTop = "4.4rem";
+
+        } else {
+          Navb.style.height = "100px";
+          Logo.style.fontSize = "2rem";
+          Logo.style.fontWeight = "700";
+          mobileNav.style.marginTop = "5.2rem";
+        }
+      }
+    </script>
+
 </body>
 </html>
