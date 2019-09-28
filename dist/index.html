@@ -124,8 +124,32 @@
   <!-- =================================================
     Scripts Section Start
   ================================================== -->
-  <!-- Animated Header Scripts -->
-  <script src="js/ahmain.js"></script>   
-      
+    <!-- Animated Header Scripts -->
+    <script src="js/ahmain.js"></script>   
+
+    <script>
+        window.onscroll = function() {
+          scrollFunction()
+      };
+
+      function scrollFunction(){
+        var Navb = document.getElementById("main-navbar")
+        var Logo = document.getElementById("brand")
+        var mobileNav = document.getElementById("menuAnchor")
+        if (document.body.scrollTop > 8 || document.documentElement.scrollTop > 8) {
+          Navb.style.height = "75px";
+          Logo.style.fontSize = "1.3rem";
+          Logo.style.fontWeight = "400";
+          mobileNav.style.marginTop = "4.4rem";
+
+        } else {
+          Navb.style.height = "100px";
+          Logo.style.fontSize = "2rem";
+          Logo.style.fontWeight = "700";
+          mobileNav.style.marginTop = "5.2rem";
+        }
+      }
+    </script>
+
 </body>
 </html>
