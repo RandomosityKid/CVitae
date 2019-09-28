@@ -40,40 +40,37 @@
   <!-- =================================================
     Navbar Section Start
   ================================================== -->
-  <section class="navigation">
-    <div class="nav-container">
+  <div class="main-navbar hide" id="main-navbar">
       <div class="brand">
-        <a href="#!">Brant Dela Cruz</a>
+          <a href="#" class="brand" id="brand">Brant Dela Cruz</a>
       </div>
-      <nav>
-        <label for="show-menu" class="show-menu">&#9776;</label>
-        <input type="checkbox" id="show-menu" role="button">
-        <ul id="menu">
-          <li>
-            <a href="#!">Info</a>
-          </li>
-          <li>
-            <a href="#!">Skills</a>
-            <ul class="hidden">
-              <li><a href="#!" class="bbottom">Programming</a></li>
-              <li><a href="#!">Game Development</a></li>
-              <li><a href="#!">Videography</a></li>
-              <li><a href="#!">Photography</a></li>
-              <li><a href="#!">Music</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#!">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
+      <div></div>
+      <div class="mobile " id="mobile">
+          <label for="show-menu" class="show-menu " id="menuAnchor">&#9776;</label>
+          <input type="checkbox" id="show-menu" role="button">
+          <ul class="nav " id="mynav">
+              <li><a href="#">Info</a></li>
+              <li><a href="#" id="hideParent">Skills ▾</a>
+                  <ul id="hidden">
+                      <li><a href="#" class="bottomry">Programming</a></li>
+                      <li><a href="#">Game Development</a></li>
+                      <li><a href="#">Videography</a></li>
+                      <li><a href="#">Photography</a></li>
+                      <li><a href="#">Music</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Space for Navbar formatting on top -->
+  <section class="space border1"> </section>
 
   <!-- =================================================
     Animated Slider Section Start
   ================================================== -->
-  <section class="cd-intro">
+  <section class="cd-intro" id="cd-intro">
     <h1 class="cd-headline rotate-1">
       <span>Who am I? I am a</span>
       <span class="cd-words-wrapper">
