@@ -1,152 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Brant Dela Cruz</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-
-    <!-- Core CSS -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    
-    <!-- Core Scripts -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-
-    <!-- Custom Font -->
-    <link href="css/FontAwesome_all.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    
-    <!-- Animated Header Dependencies -->
-    <script src="js/ahmodernizr.js"></script> 
-
-    <!-- Main CSS file -->
-    <link rel="stylesheet" href="css/mystyle.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Brant Dela Cruz - Portfolio</title>
+	
+	<!-- Core CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	
+	<!-- Core Scripts -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+	<!-- Custom Font -->
+	<link href="css/FontAwesome_all.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	
+	<!-- Main CSS File -->
+	<link rel="stylesheet" href="css/mystyle.css">
+	
+	<!-- Main JS File -->
+	<script src="js/mymain.js"></script>
+	
+	<!-- Animated Headlines Dependencies -->
+	<link rel="stylesheet" href="css/ahstyle.css">
+	<script src="js/ahmain.js"></script>
+	<script src="js/ahmodernizr.js"></script> 
+	
 </head>
-
-<header>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148464347-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-148464347-2');
-  </script>
-</header>
-
-<body>
-  <!-- =================================================
-    Navbar Section Start
-  ================================================== -->
-  <div class="main-navbar hide" id="main-navbar">
-      <div class="brand">
-          <a href="#" class="brand" id="brand">Brant Dela Cruz</a>
-      </div>
-      <div></div>
-      <div class="mobile " id="mobile">
-          <label for="show-menu" class="show-menu " id="menuAnchor">&#9776;</label>
-          <input type="checkbox" id="show-menu" role="button">
-          <ul class="nav " id="mynav">
-              <li><a href="#">Info</a></li>
-              <li><a href="#" id="hideParent">Skills ▾</a>
-                  <ul id="hidden">
-                      <li><a href="#" class="bottomry">Programming</a></li>
-                      <li><a href="#">Game Development</a></li>
-                      <li><a href="#">Videography</a></li>
-                      <li><a href="#">Photography</a></li>
-                      <li><a href="#">Music</a></li>
-                  </ul>
-              </li>
-              <li><a href="#">Contact</a></li>
-          </ul>
-      </div>
-  </div>
-
-  <!-- Space for Navbar formatting on top -->
-  <section class="space border1"> </section>
-
-  <!-- =================================================
-    Animated Slider Section Start
-  ================================================== -->
-  <section class="cd-intro" id="cd-intro">
-    <h1 class="cd-headline rotate-1">
-      <span>Who am I? I am a</span>
-      <span class="cd-words-wrapper">
-          <b class="is-visible">Programmer</b>
-          <b>Composer</b>
-          <b>Photographer</b>
-          <b>Developer</b>
-          <b>Guitarist</b>
-          <b>Videographer</b>
-      </span>
-    </h1>
-  </section> <!-- cd-intro -->
-
-  <!-- =================================================
-    About Me Section Start
-  ================================================== -->
-  <section class="sectionPart bg-primary">
-    <div class="container">
-
-      <!-- Section Heading -->
-      <h2 class="sectionHeading text-center text-uppercase text-white text-wide">all about me</h2>
-
-      <!-- Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-user-circle"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Section Content -->
-      <div class="flexbox-container text-white ">
-        <div class="fb-item fb-item-1 ">
-          <img id="myImage" src="img/profile.jpg" alt="">
-        </div>
-        <div class="fb-item fb-item-2 info-text ">
-            <p class="lead">I am a BSIT student studying about programming here in the Philippines. My future goal is to become a game developer well-versed in the programming side of the physics used in mainstream game engines.</p>
-        </div>
-        <div class="fb-item fb-item-3 info-text ">
-            <p class="lead">My wide range of skills help me become an asset in multiple areas and can help assist on multiple departments, as well as an indespensable worker due to my reach in skills. </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- =================================================
-    Scripts Section Start
-  ================================================== -->
-    <!-- Animated Header Scripts -->
-    <script src="js/ahmain.js"></script>   
-
-    <script>
-        window.onscroll = function() {
-          scrollFunction()
-      };
-
-      function scrollFunction(){
-        var Navb = document.getElementById("main-navbar")
-        var Logo = document.getElementById("brand")
-        var mobileNav = document.getElementById("menuAnchor")
-        if (document.body.scrollTop > 8 || document.documentElement.scrollTop > 8) {
-          Navb.style.height = "75px";
-          Logo.style.fontSize = "1.3rem";
-          Logo.style.fontWeight = "400";
-          mobileNav.style.marginTop = "4.4rem";
-
-        } else {
-          Navb.style.height = "100px";
-          Logo.style.fontSize = "2rem";
-          Logo.style.fontWeight = "700";
-          mobileNav.style.marginTop = "5.2rem";
-        }
-      }
-    </script>
-
+<body class="flex-body">
+	
+	<main class="main">	
+		<!-- ========== Navbar Section Start ========== -->
+		<header class="main-navbar">
+			<div class="brand ">
+				<a href="index.html" class="brand-name text-white ">Brant Dela Cruz</a>
+			</div>
+			<div class="navigation">
+				<label for="checkbox" class="menu-button text-white mb-0 " id="menu-anchor">&#9776</label>
+				<input type="checkbox" id="checkbox" class="" role="button">
+				<ul class="navbar-list " id="navigation">
+					<li class=""><a href="info.html" class="">Info</a></li>
+					<li><a href="#">Skills ▾</a>
+						<ul class="navbar-hidden">
+							<li><a href="programming.html">Programming</a></li>
+							<li><a href="gamedev.html">Game Development</a></li>
+							<li><a href="videography.html">Videography</a></li>
+							<li><a href="photography.html">Photography</a></li>
+							<li><a href="music.html">Music</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		
+		<div class="content">
+			<div class="placeholder-header"></div>
+			
+			<!-- ========== Animated Headline Section Start ========== -->
+			<section class="cd-intro ">
+				<h1 class="cd-headline rotate-1 ">
+					<span class="">Who am I? I am a</span>
+					<span class="cd-words-wrapper ">
+						<b class="is-visible">Programmer</b>
+						<b>Composer</b>
+						<b>Photographer</b>
+						<b>Developer</b>
+						<b>Videographer</b>
+					</span>
+				</h1>
+			</section>
+			
+			<!-- ========== About Me Section Start ========== -->
+			<section class="aMe ">
+				
+				<div class="aMe-grid ">
+					<!-- Section Heading -->
+					<h2 class="aMe-heading text-uppercase ">all about me</h2>
+					
+					<!-- Divider -->
+					<div class="aMe-divider ">
+						<div class="divider-line "></div>
+						<i class="fas fa-user-circle aMe-icon"></i>
+						<div class="divider-line"></div>
+					</div>
+					
+					<!-- Section Content -->
+					<img src="img/profile.jpg" alt="" class="aMe-img">
+					<p class="aMe-p1">
+						I am a BSIT student studying about programming here in the Philippines. My future goal is to become a game developer well-versed in the programming side of the physics used in mainstream game engines.
+					</p>
+					<p class="aMe-p2">
+						My wide range of skill help me become an asset in multiples areas and can help assist other on multiple departments, as well as being an indispensible worker due to my reach in skills.
+					</p>
+				</div>
+				
+			</section>
+			
+			
+			
+			
+			
+			<!-- <div class="placeholder-footer"></div> -->
+		</div>
+		
+		
+		<!-- ========== Footer Section Start ========== -->
+		<footer class="footer">
+			<p class="copyright text-white">Copyright</p>
+			<h3 class="site-status m-0 text-uppercase text-white">*site under construction*</h3>
+			<a href="#" class="text-white">Github</a>
+		</footer>
+	</main>
+	
+	
+	
 </body>
 </html>
