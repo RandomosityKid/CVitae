@@ -1,0 +1,113 @@
+// Main Navbar
+.main-navbar{
+	transition: height 1s ease;
+	background-color: $colorhf;
+	position: fixed;
+	z-index: 2048;
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.brand{
+	a, a:visited, a:hover, a:hover:visited{
+		transition: padding 1s ease;
+		text-decoration: none;
+		margin-left: 3rem;
+		padding: 1.6rem 0;
+		font-size: 2rem;
+		font-weight: bold;
+		position: absolute;
+	}
+}
+
+.menu-button{
+	transition: margin 1s ease;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	background: $colorprimary;
+	text-align: center;
+	padding: 10px 40px;
+	display: none;
+}
+
+#checkbox{
+	display: none;
+	
+	&:checked ~ .navbar-list{
+		display: block;
+	}
+}
+
+.navbar-list{
+	transition: padding 1s ease;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	height: 70px;
+	padding: 15px 0;
+	
+	li{
+		background-color: $colorhf;
+		
+		a, a:visited{
+			display: block;
+			line-height: 70px;
+			padding: 0 30px;
+			text-decoration: none;
+			color: $colorsecondary;
+			border: 1px $colorsecondary solid;
+			
+			&:hover{
+				background: $navhover;
+			}
+			
+			&:hover + .navbar-hidden{
+				display: block;
+			}
+		}
+	}
+}
+
+.navbar-hidden{
+	display: none;
+	position: absolute;
+	z-index: 2;
+	
+	&:hover{
+		display: block;
+	}
+	
+	li{
+		list-style: none;
+		min-width: 200px;
+		
+		a, a:visited{
+			line-height: 55px;
+			padding: 0 45px;
+		}
+	}
+}
+
+
+body.header-small{
+	.main-navbar{
+		height: 70px;
+	}
+	
+	.brand-name{
+		font-weight: normal;
+		padding: 0.5rem 0;
+	}
+	
+	.navbar-list{
+		padding: 0;
+	}
+	
+	.menu-button{
+		margin-top: 4.4rem;
+	}
+}
