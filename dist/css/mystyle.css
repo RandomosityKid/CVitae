@@ -1118,6 +1118,15 @@ Footer Section Start
         -ms-flex-align: center;
             align-items: center;
     color: #eae7e1;
+    padding-bottom: 30px;
+  }
+  .aMe-grid p {
+    font-size: 1rem;
+    margin: 0 15px;
+  }
+  .aMe-grid .aMe-heading {
+    font-size: 2.5rem;
+    margin: 40px 0;
   }
   .aMe-grid .aMe-divider {
     display: -webkit-box;
