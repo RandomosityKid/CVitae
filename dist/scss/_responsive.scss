@@ -1,0 +1,115 @@
+@media only screen and (max-width: 625px) {
+	
+	.placeholder-header{
+		height: 40px;
+	}
+	
+	/* Navbar Start */
+	.navbar-list{
+		display: none;
+		width: 100%;
+		padding: 0;
+		
+		li a{
+			line-height: 40px;
+		}
+	}
+	
+	.navbar-hidden{
+		position: relative;
+	}
+	
+	.menu-button{
+		display: block;
+		margin-top: 5.8rem;
+	}
+	
+	.navigation{
+		flex-grow: 2;
+	}
+	
+	.placeholder-header{
+		height: 130px;
+	}
+	/* Navbar End */
+	
+	/* Footer Start */
+	.footer{
+		font-size: 70%;
+		margin-top: auto;
+		h3{
+			font-size: 140%;
+		}
+	}
+	/* what's going on */
+	/* Footer End */
+	
+	/* Error Start */
+	.error-page{
+		
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(1fr, 5);
+		grid-template-areas: 
+		"whoops"
+		"number"
+		"text"
+		"link"
+		"pic";
+		justify-items: center;
+		margin-top: 50px;
+		
+		.error-whoops{
+			grid-area: whoops;
+		}
+		.error-404{
+			grid-area: number;
+			font-size: 8em;
+		}
+		.error-text{
+			grid-area: text;
+		}
+		.error-link{
+			grid-area: link;
+			margin-bottom: 20px;
+		}
+		.error-pic{
+			grid-area: pic;
+			height: 30rem;
+		}
+	}
+	/* Error End */
+	
+	/* aheadlines Start */
+	.cd-intro{
+		margin: 8em;
+		.cd-headline{
+			width: fit-content;
+		}
+	}
+	/* aheadlines End */
+	
+	/* about-me Start */
+	.aMe-grid{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: $colorsecondary;
+
+		.aMe-divider{
+			display: flex;
+			width: 80%;
+			align-items: center;
+
+			.aMe-icon{
+				font-size: 1.6rem;
+			}
+		}
+
+		.aMe-img{
+			max-height: 15rem;
+			margin: 20px;
+		}
+	}
+	/* about-me End */
+}
