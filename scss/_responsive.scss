@@ -1,4 +1,40 @@
-@media only screen and (max-width: 625px) {
+@media only screen and (max-width: 1030px) {
+	/* about-me Start */
+	.aMe-grid{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: $colorsecondary;
+
+		.aMe-heading{
+			font-size: 2.5rem;
+			margin: 40px 0;
+		}
+
+		.aMe-divider{
+			display: flex;
+			width: 80%;
+			align-items: center;
+
+			.aMe-icon{
+				font-size: 1.6rem;
+			}
+		}
+
+		.aMe-img{
+			max-height: 15rem;
+			margin: 20px;
+		}
+
+		p{
+			padding: 0 10%;
+			margin-bottom: 5%;
+		}
+	}
+	/* about-me End */
+}
+
+@media only screen and (max-width: 635px) {
 	
 	.placeholder-header{
 		height: 40px;
@@ -88,39 +124,26 @@
 		}
 	}
 	/* aheadlines End */
+
+	/* Explore Start */
+
+	.explore{
+
+		h2{
+			margin-top: 40px;
+		}
+
+		.explore-links{
+			flex-direction: column;
 	
-	/* about-me Start */
-	.aMe-grid{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		color: $colorsecondary;
-		padding-bottom: 30px;
-
-		p{
-			font-size: 1rem;
-			margin: 0 15px;
-		}
-
-		.aMe-heading{
-			font-size: 2.5rem;
-			margin: 40px 0;
-		}
-
-		.aMe-divider{
-			display: flex;
-			width: 80%;
-			align-items: center;
-
-			.aMe-icon{
-				font-size: 1.6rem;
+			li a{
+				padding: 0 70px;
 			}
 		}
-
-		.aMe-img{
-			max-height: 15rem;
-			margin: 20px;
-		}
 	}
-	/* about-me End */
+
+	
+	/* Explore End */
+	
+	
 }

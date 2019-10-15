@@ -48,10 +48,12 @@ p {
 section{
 	
 	&:nth-child(even){
-		background: $colorsecondary;
+		// background: $colorsecondary;
+		background: linear-gradient(180deg, rgba(209,209,209,1) 0%, rgba(234,231,225,1) 100%);
 	}
 	&:nth-child(odd){
-		background: $colorprimary;
+		// background: $colorprimary;
+		background: linear-gradient(180deg, rgba(21,128,107,1) 0%, rgba(20,139,116,1) 36%, rgba(23,169,140,1) 100%);
 	}
 }
 
@@ -67,9 +69,10 @@ section{
 }
 
 .placeholder-footer{
-	height: 60px;
-	background-color: $colorhf;
+	height: 70px;
+	background-color: transparent;
 	color: white;
+	margin-bottom: 20px;
 }
 
 
@@ -89,6 +92,10 @@ section{
 	color: $colorsecondary;
 }
 
+.color-dark{
+	color: $colordark;
+}
+
 .template{
 	background: $colortemplate !important;
 }
@@ -97,9 +104,13 @@ section{
 	max-width: 7rem;
 	height: .25rem;
 	border-radius: 1rem;
-	border: 4px $colorsecondary solid;
+	
 	width: 100%;
 	margin: 0 20px;
+}
+
+.divider-light{
+	border: 4px $colorsecondary solid;
 }
 
 .flex-row {
