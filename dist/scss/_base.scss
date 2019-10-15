@@ -89,6 +89,10 @@ section{
 	color: $colorsecondary;
 }
 
+.color-dark{
+	color: $colordark;
+}
+
 .template{
 	background: $colortemplate !important;
 }
@@ -97,9 +101,13 @@ section{
 	max-width: 7rem;
 	height: .25rem;
 	border-radius: 1rem;
-	border: 4px $colorsecondary solid;
+	
 	width: 100%;
 	margin: 0 20px;
+}
+
+.divider-light{
+	border: 4px $colorsecondary solid;
 }
 
 .flex-row {
