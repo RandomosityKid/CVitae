@@ -1014,6 +1014,8 @@ Explore Section Start
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #eae7e1;
+  margin-bottom: 70px;
 }
 
 .explore h2 {
